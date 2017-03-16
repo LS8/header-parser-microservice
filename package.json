@@ -1,0 +1,19 @@
+{
+  "name": "header-parser-microservice",
+  "version": "1.0.0",
+  "description": "Microservice that shows current IP address, language and operating system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LS8/header-parser-microservice.git"
+  },
+  "author": "LS8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LS8/header-parser-microservice/issues"
+  },
+  "homepage": "https://github.com/LS8/header-parser-microservice#readme"
+}
