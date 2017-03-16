@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LS8/header-parser-microservice/issues"
   },
-  "homepage": "https://github.com/LS8/header-parser-microservice#readme"
+  "homepage": "https://github.com/LS8/header-parser-microservice#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
