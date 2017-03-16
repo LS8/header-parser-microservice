@@ -1,11 +1,8 @@
 var express = require('express');
-var os = require('os');
 var app = express();
 
-// app.enable('trust proxy');
-app.set('trust proxy', '127.0.0.1');
 app.get('*', function(req, res) {
-  var OS = os.type() + ' ' + os.arch();
+  var OS = process.platform,
       lang = req.headers["accept-language"].slice(0, 5),
       ip = req.headers['x-forwarded-for'] || 
            req.connection.remoteAddress || 
@@ -14,7 +11,7 @@ app.get('*', function(req, res) {
   var parsedHeader = {
     ipaddress: ip,
     language: lang,
-    software: OS
+    OS: OS
   };
   res.send(JSON.stringify(parsedHeader));
   res.end();
