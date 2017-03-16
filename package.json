@@ -4,7 +4,7 @@
   "description": "Microservice that shows current IP address, language and operating system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/LS8/header-parser-microservice#readme",
   "dependencies": {
     "express": "^4.15.2"
+  },
+  "engines": {
+    "node": "7.7.2"
   }
 }
