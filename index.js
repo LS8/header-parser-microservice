@@ -11,7 +11,7 @@ app.get('*', function(req, res) {
   var parsedHeader = {
     ipaddress: ip,
     language: lang,
-    OS: OS
+    OS: OS.toUpperCase() + ' (' + req.headers["user-agent"] + ')'
   };
   res.send(JSON.stringify(parsedHeader));
   res.end();
